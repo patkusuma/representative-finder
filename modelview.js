@@ -14,7 +14,6 @@ function generateSenatorInfo(containerNode, rawAPIData) {
     title.innerHTML = "Your senators";
     containerNode.appendChild(title);
     var senatorIndices = rawAPIData.offices[2].officialIndices;
-    console.log(senatorIndices);
     for (i in senatorIndices) {
         var senatorData = document.createElement("div");
         var name = document.createElement("h3");
@@ -28,7 +27,6 @@ function generateSenatorInfo(containerNode, rawAPIData) {
         " " + rawAPIData.officials[senatorIndices[i]].address[0].zip;
         var pic = document.createElement("img")
         pic.src = rawAPIData.officials[senatorIndices[i]].photoUrl;
-        console.log(rawAPIData.officials[senatorIndices[i]].photoUrl);
         senatorData.appendChild(name);
         senatorData.appendChild(pic);
         senatorData.appendChild(phone);

@@ -7,6 +7,9 @@ Vanilla JS (for now!), HTML, CSS
 ## External APIs
 Google Civic Information API
 
+## When running in your environment
+Please set up an env.js declaring a var GOOGLE_KEY that contains the string of your API key to Google's Civic Information API.
+
 ## Future developments (note to self)
 * Log errors (address not found, illegitimate input etc)
 * Make CSS prettyyyy

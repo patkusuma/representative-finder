@@ -3,7 +3,7 @@ var controller = {
         var result = null;
             $.ajax({
                 type: "GET",
-                url: "https://www.googleapis.com/civicinfo/v2/representatives?key=AIzaSyCaNM5QKw9kBXQEBW8UqYctOh4MWz4G0hI",
+                url: "https://www.googleapis.com/civicinfo/v2/representatives?key=" + GOOGLE_KEY,
                 dataType: 'json',
                 data: {
                     address: fullAddress

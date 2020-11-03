@@ -3,19 +3,17 @@
         <title>Representative finder</title>
         <link rel="stylesheet" type="text/css" href="style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="env.js"></script>
         <script src="controller.js"></script>
         <script src="modelview.js"></script>
     </head>
     <body>
-        <h1>Representative finder</h1>
-        <p>Enter your address</p>
-        <label>Street address: </label>
-        <input type="text" id="street-address" />
-        <label>City: </label>
-        <input type="text" id="city" />
-        <label>State: </label>
-        <input type="text" id="state" />
-        <button onclick="getRepresentativeButton()">Go</button>
+        <img id="title-image" src="http://i.picasion.com/gl/90/dA84.gif" />
+        <h2>Enter your address</h2>
+        <p><label>Street address: </label><input type="text" id="street-address" /></p>
+        <p><label>City: </label><input type="text" id="city" /></p>
+        <p><label>State: </label><input type="text" id="state" /></p>
+        <p><button onclick="getRepresentativeButton()">Go</button></p>
         <div id="senator"></div>
     </body>
 </html>
